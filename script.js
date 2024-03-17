@@ -57,22 +57,9 @@ const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
   if (button.textContent === "Click Me! ❤") {
-    button.textContent = "loading...";
-    fetch("send_mail.php")
-      .then((response) => {
-        if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
-        } else {
-          console.error("Failed to send email");
-          button.textContent = "Error 😞";
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        button.textContent = "Error 😞";
-      });
-  }
-});
+    button.textContent = "loading..."; 
+    window.location.href = "http://https://zenil05.github.io/zenil05.github.ioMain";
+    });
 
 function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
   lines.forEach((line, index) => {
@@ -259,7 +246,7 @@ function drawText() {
     if (window.innerWidth < 600) {
       drawTextWithLineBreaks(
         [
-          "I love you so much , more than",
+          "I love you so much Jinnie, more than",
           "all the time and space in the universe can contain",
         ],
         canvas.width / 2,
@@ -269,7 +256,7 @@ function drawText() {
       );
     } else {
       context.fillText(
-        "I love you so much , more than all the time and space in the universe can contain",
+        "I love you so much Jinnie, more than all the time and space in the universe can contain",
         canvas.width / 2,
         canvas.height / 2
       );
